@@ -29,6 +29,8 @@ public class MainController {
                 .body("Product successfully created with quantity from parameters.");
     }
 
+
+
     @PostMapping("/create/{quantity}")
     public ResponseEntity<String> createProductWithPath(
             @BindRequest ProductRequestPath productRequestPath) {
